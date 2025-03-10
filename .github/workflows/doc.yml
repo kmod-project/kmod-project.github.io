@@ -27,7 +27,7 @@ jobs:
         run: |
           echo "# kmod API Document" > README.md
           echo >> README.md
-          ls -lr | awk '{print $1, $9}' | awk '/^d.* master/ {print "- ["$9"]("$9"/index.html)"}' >> README.md
+          echo "- [master (development)](master/index.html)" >> README.md
           ls -lr | awk '{print $1, $9}' | awk '/^d.* v/ {print "- ["$2"]("$2"/index.html)"}' >> README.md
 
       - name: Commit and push
