@@ -193,7 +193,7 @@ release the resources of the kmod library context.</p>
 <tr>
 <td class="parameter_name"><p>dirname</p></td>
 <td class="parameter_description"><p>what to consider as linux module's directory, if NULL
-defaults to $MODULE_DIRECTORY/<code class="literal">uname -r</code>. If it's relative,
+defaults to $MODULE_DIRECTORY/$(uname -r). If it's relative,
 it's treated as relative to the current working directory.
 Otherwise, give an absolute dirname.</p></td>
 <td class="parameter_annotations"> </td>
